@@ -85,7 +85,7 @@ bool gameLogic(float deltaTime)
 	if (move.x != 0 || move.y != 0)
 	{
 		move = glm::normalize(move);
-		move *= deltaTime * 200;
+		move *= deltaTime * 200; //200 pixels per second
 		data.playerPos += move;
 	}
 
